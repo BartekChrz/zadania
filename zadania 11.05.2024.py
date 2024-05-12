@@ -71,4 +71,61 @@ def slowoWSlowie(arg1, arg2):
 
 print(slowoWSlowie(arg1, arg2))
 
-#zadanie 5.7.1.6 przesle w tygodniu
+#zadanie 5.7.1.6
+
+line1 = "  # ### ### # # ### ### ### ### ### ### "
+line2 = "  #   #   # # # #   #     # # # # # # # "
+line3 = "  # ### ### ### ### ###   # ### ### # # "
+line4 = "  # #     #   #   # # #   # # #   # # # "
+line5 = "  # ### ###   # ### ###   # ### ### ### "
+
+szablon = [line1, line2, line3, line4, line5]
+
+def wyswietl_liczbe(liczba):
+    liczba = str(liczba)
+    
+    for char in szablon:
+        liczba1 = char[0:4]
+        liczba2 = char[4:8]
+        liczba3 = char[8:12]
+        liczba4 = char[12:16]
+        liczba5 = char[16:20]
+        liczba6 = char[20:24]
+        liczba7 = char[24:28]
+        liczba8 = char[28:32]
+        liczba9 = char[32:36]
+        liczba0 = char[36:40]
+        wynik = []
+        for el in liczba:
+            if el == '1':
+                wynik.append(liczba1)
+            
+            if el == '2':
+                wynik.append(liczba2)
+    
+            if el == '3':
+                wynik.append(liczba3)
+           
+            if el == '4':
+                wynik.append(liczba4)
+
+            if el == '5':
+                wynik.append(liczba5)
+
+            if el == '6':
+                wynik.append(liczba6)
+
+            if el == '7':
+                wynik.append(liczba7)
+
+            if el == '8':
+                wynik.append(liczba8)
+            if el == '9':
+                wynik.append(liczba9)
+            if el == '0':
+                wynik.append(liczba0)
+                
+            
+        print(''.join(wynik))
+        
+print(wyswietl_liczbe(1239483) 
